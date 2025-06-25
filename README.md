@@ -9,6 +9,7 @@
 ### Method  
 1.	預計使用diffusion model為主體來完成此任務，因為diffusion model其實他不是單純做加噪和去噪的動作，它理論的意義其實是在過程中學習如何將圖片回復到前一個狀態，這種特性跟image restoration非常相似，目前諸多論文都採用diffusion model來實作，有別於過去的VAE和GAN，Diffusion的概念更貼近image restoration的性質。  
 2.	那我實際要做的事是將最主流的破壞式壓縮演算法jpeg（最為常見）、webp（網頁很常用）、avif（效果較前兩者好，使用率漸增），因為這三者都是在量化過程中採用DCT（Discrete Cosine Transform），所以可能較多共通性。  
+![image](https://github.com/Azure0413/DDPM_Image_Restoration/blob/main/src/generated-image.png)
 
 ### Results  
 ![image](https://github.com/Azure0413/DDPM_Image_Restoration/blob/main/src/jpeg_result.png)
